@@ -1,0 +1,23 @@
+<header class="bg-gray-800 text-white p-4 fixed w-screen flex justify-between items-center">
+    <div class="flex items-center">
+        <a routerLink="/"><img src="assets/logo.png" alt="Logo" class="h-10 mr-4"></a>
+        <nav class="hidden md:flex space-x-4">
+            <a routerLink="/random" class="hover:text-gray-400">Random</a>
+            <a routerLink="/explore" class="hover:text-gray-400">Explore</a>
+            <a routerLink="/auth/signin" class="hover:text-gray-400">SignIn</a>
+            <a routerLink="/auth/login" class="hover:text-gray-400">LogIn</a>
+
+        </nav>
+    </div>
+    <div class="md:hidden">
+        <button id="menu-button" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="hidden md:flex space-x-4">
+        <a routerLink="/settings" class="hover:text-gray-400">Settings</a>
+        <a routerLink="/profile" class="hover:text-gray-400">Profile</a>
+    </div>
+</header>

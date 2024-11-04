@@ -1,0 +1,31 @@
+<div class="board-container">
+    <h3>Chess Board</h3>
+    <div class="controls">
+      <button (click)="randomGame()" class="control-btn">Start Random Game</button>
+      <button (click)="stopGame()" class="control-btn stop">Stop Game</button>
+      <button (click)="resetBoard()" class="control-btn reset">Reset Board</button>
+    </div>
+    
+    <div class="chess-board">
+      <div *ngFor="let row of board; let i = index" class="row">
+        <div *ngFor="let square of row; let j = index" 
+             class="square" 
+             [ngClass]="{
+               'black': isBlackSquare(i, j),
+               'valid-move': isValidMove(i, j),
+               'selected': isSelectedSquare(i, j)
+             }"
+             (click)="onSquareClick(i, j)">
+          <img *ngIf="setPiece(square)" [src]="setPiece(square)" class="piece" alt="chess piece"/>
+        </div>
+      </div>
+    </div>
+    
+    <div class="game-status" *ngIf="chess.isGameOver()">
+      <h4>Game Over!</h4>
+      <p *ngIf="chess.isCheckmate()">Checkmate!</p>
+      <p *ngIf="chess.isDraw()">Draw!</p>
+      <p *ngIf="chess.isStalemate()">Stalemate!</p>
+      <a routerLink="/">Back to Home</a>
+    </div>
+  </div>

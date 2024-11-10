@@ -12,9 +12,15 @@
 
     <section class="hero relative h-[80vh]">
         <div class="hero-content " >
-            <h1 class="title">WEBSHOCKER</h1>
-            <p class="subtitle">CHESS SET</p>
-            <button class="buy-btn">BUY NOW</button>
+            <pre class="text-4xl font-bold text-white title">{{ title }}</pre>
+            <br>
+    <p class="text-lg text-white mt-2">
+      Play chess online with millions of players around the world
+    </p>
+    <br>
+    <br>
+            <button class="buy-btn"><a routerLink="/board"
+                class=" text-white px-4 py-2 rounded">Play Now</a></button>
         </div>
       <img src="../../../assets/Board with Shadow.png" alt="chess" class="h-[60vh] absolute -bottom-[103px] left-[18%]">
 

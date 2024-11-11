@@ -1,39 +1,46 @@
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-left">
-                <span class="cart">CART <span class="cart-count">2</span></span>
-            </div>
-            <div class="navbar-right">
-                <button class="menu-btn">MENU</button>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <span class="cart">CART <span class="cart-count">2</span></span>
+      </div>
+      <div class="navbar-right">
+        <button class="menu-btn">MENU</button>
+      </div>
+    </nav>
+  </header>
 
-    <section class="hero relative h-[80vh]">
-        <div class="hero-content " >
-            <pre class="text-4xl font-bold text-white title">{{ title }}</pre>
-            <br>
-    <p class="text-lg text-white mt-2">
-      Play chess online with millions of players around the world
+  <section class="hero relative h-[80vh]">
+    <div class="hero-content">
+      <pre class="text-4xl font-bold text-white title">{{ title }}</pre>
+      <br />
+      <p class="text-lg text-white mt-2">
+        Play chess online with millions of players around the world
+      </p>
+      <br />
+      <br />
+      <a routerLink="/board" class="text-white px-4 py-2 rounded">
+        <button class="buy-btn">Play Now</button></a
+      >
+    </div>
+    <img
+      src="../../../assets/Board with Shadow.png"
+      alt="chess"
+      class="h-[60vh] absolute -bottom-[103px] left-[18%]"
+    />
+  </section>
+
+  <section class="product-info">
+    <h2 class="product-info-title">
+      CHECK THE <span class="highlight">FIGURES</span>
+    </h2>
+    <p class="description">
+      Sed sit amet orci nibh. Nullam molestie scelerisque lacus, vel bibendum
+      arcu dapibus eget. Pellentesque elementum quam tellus, id vehicula leo
+      feugiat eget. Duis ultrices, mi et dignissim fermentum, nibh nunc auctor
+      dui, id posuere ipsum sapien eu nunc. Sed facilisis vitae ante eu
+      consectetur. Pellentesque aliquet diam aliquet malesuada pharetra. Aliquam
+      tempor enim at pretium finibus.
     </p>
-    <br>
-    <br>
-            <button class="buy-btn"><a routerLink="/board"
-                class=" text-white px-4 py-2 rounded">Play Now</a></button>
-        </div>
-      <img src="../../../assets/Board with Shadow.png" alt="chess" class="h-[60vh] absolute -bottom-[103px] left-[18%]">
-
-    </section>
-
-    <section class="product-info">
-        <h2 class="product-info-title">CHECK THE <span class="highlight">FIGURES</span></h2>
-        <p class="description">
-            Sed sit amet orci nibh. Nullam molestie scelerisque lacus, vel bibendum arcu dapibus eget. 
-            Pellentesque elementum quam tellus, id vehicula leo feugiat eget. Duis ultrices, 
-            mi et dignissim fermentum, nibh nunc auctor dui, id posuere ipsum sapien eu nunc. 
-            Sed facilisis vitae ante eu consectetur. Pellentesque aliquet diam aliquet malesuada pharetra. 
-            Aliquam tempor enim at pretium finibus.
-        </p>
-    </section>
+  </section>
 </body>
